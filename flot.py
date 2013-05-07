@@ -7,7 +7,7 @@ flotdir=os.path.join(os.path.dirname(os.path.abspath(__file__)), "flot")
 flotreldir=os.path.relpath(flotdir)
 
 if not os.path.exists(flotdir):
-    os.system("git clone %s"%flotgit)
+    os.system("git clone %s %s"%(flotgit, flotreldir))
 
 if not os.path.exists(flotdir):
     print "flot does not exist. please do \"git clone %s\""%flotgit
